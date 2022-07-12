@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lora&display=swap');
+
+:root {
+    --cor-primaria: #345EA8;
+    --cor-secundaria: #3b8AC3;
+    --cor-terciario: #4AB4DE;
+    --cor-branco: #EEDBCD; 
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(315deg, rgba(52,94,168,1) 8%, rgba(59,138,195,1) 92%);
+}
+
+body h1 {
+    font-family: 'Lora', serif;
+    color: var(--cor-branco);
+}
+
+/* grid */
+
+.massa-container {
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 733px) {
+    .massa-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1092px) {
+    .massa-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/*******************************************/
+
+/* flex */
+
+.legal-container {
+    max-width: 80rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/******************bruh********************/
+
+.massa-card {
+    min-width: 20rem;
+    margin: 1rem;
+    text-align: justify;
+    cursor: default;
+    background: var(--cor-branco);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: var(--cor-branco) 0.2em solid;
+    transition: .2s;
+}
+
+.massa-card:hover {
+    border: var(--cor-terciario) 0.2em solid;
+    background-color: var(--cor-terciario);
+}
+
+.massa-card h1 {
+    width: 100%;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.massa-card p {
+    padding: 0 1rem 1rem 1rem;
+}
