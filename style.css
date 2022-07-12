@@ -57,7 +57,7 @@ body h1 {
 /******************bruh********************/
 
 .massa-card {
-    min-width: 20rem;
+    max-width: 20rem;
     margin: 1rem;
     text-align: justify;
     cursor: default;
